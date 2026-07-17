@@ -63,7 +63,7 @@ export function SkillsSection() {
   const renderSkillGroup = (title, items, isLarge = false) => (
     <Card className={`flex flex-col h-full ${isLarge ? 'md:col-span-2 lg:col-span-2 bg-gradient-to-br from-surface to-background' : 'bg-surface/50'}`}>
       <h3 className="text-xl font-bold text-secondary mb-6">{title}</h3>
-      <div className="flex flex-wrap gap-3 mt-auto">
+      <div className="flex flex-wrap gap-3">
         {items.map((skill, i) => (
           <Badge key={i} variant={isLarge ? "primary" : "default"} className="text-sm px-4 py-2 flex items-center gap-2 font-medium">
             {skillIcons[skill] || null}
