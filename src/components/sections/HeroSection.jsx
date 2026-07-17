@@ -68,11 +68,11 @@ export function HeroSection() {
         className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 shrink-0 relative group"
       >
         {/* Premium Glow Effect Behind Image */}
-        <div className="absolute inset-0 bg-primary/30 rounded-full blur-3xl group-hover:bg-primary/50 transition-colors duration-500" />
+        <div className="absolute inset-0 bg-primary/30 rounded-3xl blur-3xl group-hover:bg-primary/50 transition-colors duration-500" />
         
         {/* Image Container with Border */}
-        <div className="relative z-10 w-full h-full rounded-full p-1 bg-gradient-to-br from-primary/50 to-background">
-          <div className="w-full h-full rounded-full overflow-hidden bg-surface">
+        <div className="relative z-10 w-full h-full rounded-3xl p-1 bg-gradient-to-br from-primary/50 to-background">
+          <div className="w-full h-full rounded-3xl overflow-hidden bg-surface">
             <img 
               src="/projects/avatar.png" 
               alt="Azam Profile" 

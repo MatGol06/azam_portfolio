@@ -36,7 +36,7 @@ export function ContactSection() {
             </div>
             <div className="flex flex-col gap-2">
               <label htmlFor="email" className="text-sm font-medium text-muted">Email</label>
-              <input type="email" id="email" required className="bg-background border border-border rounded-lg px-4 py-3 text-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200" placeholder="azam@gamil.com" />
+              <input type="email" id="email" required className="bg-background border border-border rounded-lg px-4 py-3 text-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200" placeholder="azam@gmail.com" />
             </div>
           </div>
           
