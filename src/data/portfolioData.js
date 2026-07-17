@@ -13,9 +13,9 @@ export const portfolioData = {
     ]
   },
   skills: {
-    frontend: ["React", "Next.js", "Tailwind CSS", "Bootstrap"],
+    frontend: ["HTML", "CSS", "JavaScript","React", "Next.js", "Tailwind CSS", "Bootstrap"],
     backend: ["Node.js", "PHP", "MySQL", "REST APIs","MongoDB"],
-    systems: ["Linux", "Networking", "Hardware", "Cybersecurity"],
+    systems: ["Windows","Linux", "Networking", "Hardware", "Cybersecurity"],
     tools: ["Git", "GitHub", "IT Support"]
   },
   experience: [
@@ -35,7 +35,7 @@ export const portfolioData = {
       id: 2,
       role: "Freelance Web Developer",
       company: "SDE Group",
-      duration: "2023–2024",
+      duration: "",
       description: "",
       achievements: [
         "Developed a professional corporate website focused on UI/UX.",
