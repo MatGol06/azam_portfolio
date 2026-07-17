@@ -1,19 +1,15 @@
-"use client";
-import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-export function Card({ className, children, hover = true, ...props }) {
+export function Card({ className, children, ...props }) {
   return (
-    <motion.div
-      whileHover={hover ? { y: -5 } : {}}
-      transition={{ duration: 0.2 }}
+    <div
       className={cn(
-        "rounded-2xl bg-card border border-border p-6 shadow-lg backdrop-blur-sm",
+        "rounded-2xl bg-card border border-border p-6 shadow-lg backdrop-blur-sm transition-all duration-300",
         className
       )}
       {...props}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

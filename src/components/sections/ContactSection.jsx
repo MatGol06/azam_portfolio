@@ -32,17 +32,17 @@ export function ContactSection() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="flex flex-col gap-2">
               <label htmlFor="name" className="text-sm font-medium text-muted">Name</label>
-              <input type="text" id="name" required className="bg-background border border-border rounded-lg px-4 py-3 text-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="John Doe" />
+              <input type="text" id="name" required className="bg-background border border-border rounded-lg px-4 py-3 text-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200" placeholder="Azam Tajuddin" />
             </div>
             <div className="flex flex-col gap-2">
               <label htmlFor="email" className="text-sm font-medium text-muted">Email</label>
-              <input type="email" id="email" required className="bg-background border border-border rounded-lg px-4 py-3 text-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="john@example.com" />
+              <input type="email" id="email" required className="bg-background border border-border rounded-lg px-4 py-3 text-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200" placeholder="azam@sdegroup.com.my" />
             </div>
           </div>
           
           <div className="flex flex-col gap-2">
             <label htmlFor="message" className="text-sm font-medium text-muted">Message</label>
-            <textarea id="message" required rows={5} className="bg-background border border-border rounded-lg px-4 py-3 text-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none" placeholder="How can I help you?"></textarea>
+            <textarea id="message" required rows={5} className="bg-background border border-border rounded-lg px-4 py-3 text-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 resize-none" placeholder="Briefly describe your project or enquiry..."></textarea>
           </div>
           
           <Button type="submit" size="lg" className="w-full sm:w-auto self-end" disabled={loading || success}>

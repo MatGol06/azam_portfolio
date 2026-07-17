@@ -4,7 +4,6 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { SkillsSection } from "@/components/sections/SkillsSection";
 import { ExperienceSection } from "@/components/sections/ExperienceSection";
-import { ProjectsSection } from "@/components/sections/ProjectsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 
 export default function Home() {
@@ -22,11 +21,6 @@ export default function Home() {
       <SectionWrapper id="skills">
         <SectionTitle title="Tech Stack" subtitle="My Arsenal" />
         <SkillsSection />
-      </SectionWrapper>
-
-      <SectionWrapper id="projects">
-        <SectionTitle title="Featured Projects" subtitle="Selected Work" />
-        <ProjectsSection />
       </SectionWrapper>
       
       <SectionWrapper id="experience">

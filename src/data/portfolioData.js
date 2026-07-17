@@ -1,64 +1,61 @@
 export const portfolioData = {
   hero: {
     title: "Detail-Oriented IT Graduate.",
-    subtitle: "Bringing hands-on experience in technical support, system development, and network configuration.",
-    availability: "Available for new opportunities"
+    subtitle: "Building robust systems & premium digital experiences.",
+    availability: "Available for work"
   },
   about: {
-    summary: "Detail-oriented IT graduate with hands-on experience in technical support, system maintenance, hardware troubleshooting and network configuration through internship and academic projects. Skilled in supporting daily IT operations, managing system updates, maintaining ICT assets and assisting in web-based system development. Familiar with Linux environments, database management and cybersecurity fundamentals with strong problem-solving and communication skills.",
+    summary: "IT graduate specializing in system maintenance, network configuration, and full-stack development. Passionate about solving complex problems through clean code and reliable infrastructure.",
     values: [
-      { title: "System Reliability", description: "Maintaining ICT assets, patching software, and ensuring secure network configurations." },
-      { title: "Problem Solving", description: "Providing fast, effective first-level IT support for hardware and software issues." },
-      { title: "Development", description: "Assisting in building web-based systems (like SMPK and e-BK) with modern tech stacks." }
+      { title: "System Reliability", description: "Ensuring secure and stable IT infrastructure." },
+      { title: "Problem Solving", description: "Providing fast, effective technical solutions." },
+      { title: "Web Development", description: "Building modern, scalable applications." }
     ]
   },
   skills: {
-    frontend: ["React", "Next.js", "Tailwind CSS", "HTML/CSS", "Bootstrap"],
-    backend: ["Node.js", "PHP", "REST APIs", "MySQL", "Database Management"],
-    systems: ["Linux Environments", "Network Configuration", "Hardware Troubleshooting", "Cybersecurity Basics"],
-    tools: ["Git", "GitHub", "System Maintenance", "IT Support"]
+    frontend: ["React", "Next.js", "Tailwind CSS", "Bootstrap"],
+    backend: ["Node.js", "PHP", "MySQL", "REST APIs","MongoDB"],
+    systems: ["Linux", "Networking", "Hardware", "Cybersecurity"],
+    tools: ["Git", "GitHub", "IT Support"]
   },
   experience: [
     {
       id: 1,
-      role: "Intern, IT Support & System Development",
-      company: "Universiti Teknologi MARA (UiTM)",
-      duration: "Jan 2026 — May 2026",
-      description: "Supported daily IT operations, managed system updates, and assisted in web-based system development.",
+      role: "Intern, IT Support & System Dev",
+      company: "UiTM",
+      duration: "Jan – May 2026",
+      description: "",
       achievements: [
-        "Provided first-level IT support for hardware, software and system-related issues.",
-        "Installed and configured computer systems, network devices, and peripherals.",
-        "Performed routine maintenance: antivirus updates, backup monitoring, and patching.",
-        "Assisted in internal system development projects (SMPK and e-BK).",
-        "Maintained ICT asset records and technical documentation."
+        "Provided first-level IT support and network configuration.",
+        "Performed routine maintenance: antivirus, backups, and patching.",
+        "Assisted in developing internal web systems (SMPK & e-BK)."
       ]
     },
     {
       id: 2,
       role: "Freelance Web Developer",
-      company: "SDE Group (Client)",
-      duration: "2023 - 2024",
-      description: "Led the development of a professional corporate website using Bootstrap and PHP. Focused on SEO and UI/UX.",
+      company: "SDE Group",
+      duration: "2023–2024",
+      description: "",
       achievements: [
-        "Implemented scroll-triggered animations for enhanced user engagement.",
-        "Modularized legacy HTML code into scalable PHP includes.",
-        "Improved search engine visibility through structural SEO practices."
+        "Developed a professional corporate website focused on UI/UX.",
+        "Improved search engine visibility through structural SEO."
       ]
     }
   ],
   education: [
     {
       id: 1,
-      degree: "Diploma in Information Technology (Digital Technology)",
-      school: "Politeknik Sultan Abdul Halim Mu’adzam Shah (POLIMAS)",
-      duration: "May 2023 - Sep 2026",
-      details: "Relevant Coursework: Computer Networking, Operating Systems, Database Management (MySQL), and Information Security."
+      degree: "Diploma in Information Technology",
+      school: "POLIMAS",
+      duration: "2023–2026",
+      details: ""
     },
     {
       id: 2,
       degree: "Sijil Pelajaran Malaysia (SPM)",
-      school: "Sekolah Menengah Kebangsaan Merbok",
-      duration: "Jan 2018 - Dec 2022",
+      school: "SMK Merbok",
+      duration: "2018–2022",
       details: ""
     }
   ],
@@ -66,34 +63,48 @@ export const portfolioData = {
     {
       id: 1,
       title: "MovieVerse Premium",
-      description: "A production-ready streaming platform interface featuring high-contrast cinematic design, seamless animations, and accessibility-first architecture.",
+      description: "A production-ready streaming interface featuring cinematic design and smooth animations.",
       image: "/projects/movieVerse.png",
       tech: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
       github: "https://github.com/MatGol06/movieProject",
-      live: "#"
+      live: "https://movie-verse-flame-two.vercel.app/"
     },
     {
       id: 2,
-      title: "Dynamic Supabase Blog",
-      description: "A secure, robust content management system powered by Supabase Authentication and row-level security for article management.",
-      image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070&auto=format&fit=crop",
-      tech: ["React", "Supabase", "Tailwind CSS", "Vite"],
+      title: "iOUTS Management System",
+      description: "A digital outing management system utilizing QR codes for real-time tracking.",
+      image: "/projects/ioutsProject.png",
+      tech: ["PHP", "JavaScript", "Bootstrap"],
       github: "https://github.com/MatGol06",
-      live: "#"
+      live: "https://iouts.online/"
     },
     {
       id: 3,
       title: "Interactive Art Gallery",
-      description: "An immersive digital gallery experience featuring spatial audio, auto-play capabilities, and dynamic room-specific soundscapes.",
-      image: "https://images.unsplash.com/photo-1518998053401-a414909197e4?q=80&w=2070&auto=format&fit=crop",
-      tech: ["Next.js", "Framer Motion", "Web Audio API", "Tailwind CSS"],
+      description: "An immersive digital gallery featuring spatial audio and dynamic soundscapes.",
+      image: "/projects/artWeb.png",
+      tech: ["Next.js", "Framer Motion", "Tailwind CSS"],
       github: "https://github.com/MatGol06",
-      live: "#"
+      live: "https://art-website-project.vercel.app/"
+    },
+    {
+      id: 4,
+      title: "SDE Corporate Website",
+      description: "A professional, responsive corporate website built for SEO visibility.",
+      image: "/projects/sdeProject.png",
+      tech: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+      github: "#",
+      live: "https://sdegroup.com.my/"
+    },
+    {
+      id: 5,
+      title: "Custom MERN CMS",
+      description: "A comprehensive Content Management System built to streamline digital content workflows.",
+      images: ["/projects/cmsProject.png", "/projects/cmsProject2.png"],
+      image: "/projects/cmsProject.png",
+      tech: ["MongoDB", "Express", "React", "Node.js"],
+      github: "https://github.com/MatGol06",
+      live: "https://company-cms-ruby.vercel.app/"
     }
-  ],
-  services: [
-    { title: "System Maintenance", desc: "Performing routine updates, backup monitoring and software patching." },
-    { title: "IT Support", desc: "First-level support for hardware, software and network configurations." },
-    { title: "Web Development", desc: "Assisting in building and maintaining web-based systems." }
   ]
 };
