@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Send } from "lucide-react";
+import { SendingLoader } from "@/components/ui/SendingLoader";
 
 export function ContactSection() {
   const [loading, setLoading] = useState(false);
@@ -17,7 +18,7 @@ export function ContactSection() {
       setSuccess(true);
       e.target.reset();
       setTimeout(() => setSuccess(false), 3000);
-    }, 1500);
+    }, 4000); // Extended mock delay to let the animation play fully
   };
 
   return (
@@ -45,11 +46,17 @@ export function ContactSection() {
             <textarea id="message" required rows={5} className="bg-background border border-border rounded-lg px-4 py-3 text-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 resize-none" placeholder="Briefly describe your project or enquiry..."></textarea>
           </div>
           
-          <Button type="submit" size="lg" className="w-full sm:w-auto self-end" disabled={loading || success}>
-            {loading ? "Sending..." : success ? "Message Sent!" : (
-              <>Send Message <Send size={18} className="ml-2" /></>
-            )}
-          </Button>
+          {loading ? (
+            <div className="flex justify-end">
+              <SendingLoader text="Sending..." />
+            </div>
+          ) : (
+            <Button type="submit" size="lg" className="w-full sm:w-auto self-end" disabled={success}>
+              {success ? "Message Sent!" : (
+                <>Send Message <Send size={18} className="ml-2" /></>
+              )}
+            </Button>
+          )}
         </form>
       </Card>
     </div>
