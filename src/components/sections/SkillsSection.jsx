@@ -28,7 +28,8 @@ import {
   FaRobot,
   FaLayerGroup,
   FaCode,
-  FaDatabase
+  FaDatabase,
+  FaJava
 } from "react-icons/fa6";
 
 const skillIcons = {
@@ -48,6 +49,7 @@ const skillIcons = {
   "REST APIs": <FaServer className="text-primary" size={16} />,
   "MongoDB": <SiMongodb className="text-[#47A248]" size={16} />,
   "Oracle Database": <FaDatabase className="text-[#F80000]" size={16} />,
+  "Java": <FaJava className="text-[#E76F00]" size={16} />,
   
   // Systems
   "Windows": <FaWindows className="text-[#0078D4]" size={16} />,
