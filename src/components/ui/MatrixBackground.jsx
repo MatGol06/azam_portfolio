@@ -8,7 +8,7 @@ export const MatrixBackground = () => {
   const [fontSize, setFontSize] = useState(14);
   const [speed, setSpeed] = useState(0.5);
   const [density, setDensity] = useState(1);
-  const [textColor, setTextColor] = useState('#3B82F6'); // Set to Primary Blue to match portfolio theme!
+  const [textColor, setTextColor] = useState('#06B6D4'); // Set to Ice Cyan to match portfolio theme!
   
   const animationFrameId = useRef(null);
   const strands = useRef([]);
@@ -67,7 +67,7 @@ export const MatrixBackground = () => {
     }
     
     // Fade effect for trailing
-    ctx.fillStyle = 'rgba(9, 9, 11, 0.15)'; // Zinc 950 color with opacity
+    ctx.fillStyle = 'rgba(11, 14, 20, 0.15)'; // Deep steel dark color with opacity
     ctx.fillRect(0, 0, width, height);
     
     strands.current.sort((a, b) => a.layer - b.layer);
@@ -160,7 +160,7 @@ export const MatrixBackground = () => {
       <canvas 
         ref={canvasRef}
         className="fixed inset-0 w-full h-full z-[-1] pointer-events-none"
-        style={{ backgroundColor: '#09090b' }}
+        style={{ backgroundColor: '#0B0E14' }}
       />
       
       <div className="fixed bottom-6 left-6 z-50">
