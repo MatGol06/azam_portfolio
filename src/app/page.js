@@ -14,22 +14,22 @@ export default function Home() {
       </SectionWrapper>
 
       <SectionWrapper id="about">
-        <SectionTitle title="About Me" subtitle="Who am I?" />
+        <SectionTitle title="About Me" />
         <AboutSection />
       </SectionWrapper>
 
       <SectionWrapper id="skills">
-        <SectionTitle title="Tech Stack" subtitle="My Arsenal" />
+        <SectionTitle title="Tech Stack" />
         <SkillsSection />
       </SectionWrapper>
       
       <SectionWrapper id="experience">
-        <SectionTitle title="Where I've Worked" subtitle="Experience" />
+        <SectionTitle title="Where I've Worked" />
         <ExperienceSection />
       </SectionWrapper>
 
       <SectionWrapper id="contact">
-        <SectionTitle title="Get In Touch" subtitle="What's Next?" className="text-center items-center" />
+        <SectionTitle title="Get In Touch" className="text-center items-center" />
         <ContactSection />
       </SectionWrapper>
     </>

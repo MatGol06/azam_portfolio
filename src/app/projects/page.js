@@ -22,7 +22,6 @@ export default function ProjectsPage() {
           </Link>
           <SectionTitle 
             title="Project Archive" 
-            subtitle="All Works" 
             className="mb-0"
           />
           <p className="text-muted text-lg max-w-2xl mt-6">

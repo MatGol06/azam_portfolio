@@ -12,6 +12,7 @@
   --color-error: #EF4444;
   --color-border: rgba(255, 255, 255, 0.1);
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
 }
 
@@ -30,7 +31,9 @@ body {
 /* Base custom resets */
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-secondary);
-  font-weight: bold;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.03em;
 }
 p {
   color: var(--color-muted);
