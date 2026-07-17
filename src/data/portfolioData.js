@@ -14,9 +14,9 @@ export const portfolioData = {
   },
   skills: {
     frontend: ["HTML", "CSS", "JavaScript","React", "Next.js", "Tailwind CSS", "Bootstrap"],
-    backend: ["Node.js", "PHP", "MySQL", "REST APIs","MongoDB"],
+    backend: ["Node.js", "PHP", "MySQL", "REST APIs","MongoDB","Oracle Database"],
     systems: ["Windows","Linux", "Networking", "Hardware", "Cybersecurity"],
-    tools: ["Git", "GitHub", "IT Support"]
+    tools: ["Git", "GitHub", "IT Support","VS Code","XAMPP","Apache","Laragon","Antigravity"]  
   },
   experience: [
     {

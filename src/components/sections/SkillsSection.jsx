@@ -24,7 +24,11 @@ import {
   FaHeadphones,
   FaServer,
   FaWindows,
-  FaLinux
+  FaLinux,
+  FaRobot,
+  FaLayerGroup,
+  FaCode,
+  FaDatabase
 } from "react-icons/fa6";
 
 const skillIcons = {
@@ -43,6 +47,7 @@ const skillIcons = {
   "MySQL": <SiMysql className="text-[#4479A1]" size={16} />,
   "REST APIs": <FaServer className="text-primary" size={16} />,
   "MongoDB": <SiMongodb className="text-[#47A248]" size={16} />,
+  "Oracle Database": <FaDatabase className="text-[#F80000]" size={16} />,
   
   // Systems
   "Windows": <FaWindows className="text-[#0078D4]" size={16} />,
@@ -54,7 +59,12 @@ const skillIcons = {
   // Tools
   "Git": <SiGit className="text-[#F05032]" size={16} />,
   "GitHub": <SiGithub className="text-secondary" size={16} />,
-  "IT Support": <FaHeadphones className="text-primary" size={16} />
+  "IT Support": <FaHeadphones className="text-primary" size={16} />,
+  "VS Code": <FaCode className="text-[#007ACC]" size={16} />,
+  "XAMPP": <FaServer className="text-[#FB7A24]" size={16} />,
+  "Apache": <FaServer className="text-[#D22128]" size={16} />,
+  "Laragon": <FaLayerGroup className="text-[#00B4EE]" size={16} />,
+  "Antigravity": <FaRobot className="text-secondary" size={16} />
 };
 
 export function SkillsSection() {
