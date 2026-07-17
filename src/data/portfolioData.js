@@ -1,7 +1,7 @@
 export const portfolioData = {
   hero: {
-    title: "Detail-Oriented IT Graduate.",
-    subtitle: "Building robust systems & premium digital experiences.",
+    title: "I build and maintain systems.",
+    subtitle: "An IT graduate focused on reliable web development and stable infrastructure.",
     availability: "Available for work"
   },
   about: {
