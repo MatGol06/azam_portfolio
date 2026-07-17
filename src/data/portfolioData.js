@@ -5,7 +5,7 @@ export const portfolioData = {
     availability: "Available for work"
   },
   about: {
-    summary: "IT graduate specializing in system maintenance, network configuration, and full-stack development. Passionate about solving complex problems through clean code and reliable infrastructure.",
+    summary: "Hi, I'm Azam Tajuddin. I'm an IT graduate specializing in system maintenance, network configuration, and full-stack development. I enjoy solving complex problems through clean code and reliable infrastructure.",
     values: [
       { title: "System Reliability", description: "Ensuring secure and stable IT infrastructure." },
       { title: "Problem Solving", description: "Providing fast, effective technical solutions." },
