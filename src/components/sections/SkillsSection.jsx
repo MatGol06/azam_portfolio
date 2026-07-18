@@ -72,26 +72,42 @@ const skillIcons = {
 export function SkillsSection() {
   const { skills } = portfolioData;
 
-  const renderSkillGroup = (title, items, isLarge = false) => (
-    <Card className={`flex flex-col h-full ${isLarge ? 'md:col-span-2 lg:col-span-2 bg-gradient-to-br from-surface to-background' : 'bg-surface/50'}`}>
+  const renderSkillGroup = (title, items, layout = "square", colSpan = 1) => (
+    <Card className={`flex flex-col h-full bg-surface/50 ${colSpan === 2 ? 'md:col-span-2 bg-gradient-to-br from-surface to-background' : ''}`}>
       <h3 className="text-xl font-bold text-secondary mb-6">{title}</h3>
-      <div className="flex flex-wrap gap-3">
-        {items.map((skill, i) => (
-          <Badge key={i} variant={isLarge ? "primary" : "default"} className="text-sm px-4 py-2 flex items-center gap-2 font-medium">
-            {skillIcons[skill] || null}
-            <span>{skill}</span>
-          </Badge>
-        ))}
-      </div>
+      
+      {layout === "square" ? (
+        <div className="grid grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
+          {items.map((skill, i) => (
+            <div key={i} className="flex flex-col items-center justify-center p-4 bg-background/60 border border-border rounded-xl aspect-square hover:bg-surface hover:border-primary/50 transition-all duration-300 group">
+              <div className="[&>svg]:w-8 [&>svg]:h-8 mb-3 opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300">
+                {skillIcons[skill] || null}
+              </div>
+              <span className="text-[10px] sm:text-xs font-semibold text-muted group-hover:text-secondary text-center leading-tight">{skill}</span>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="flex flex-wrap gap-3">
+          {items.map((skill, i) => (
+            <Badge key={i} variant={colSpan === 2 ? "primary" : "default"} className="text-sm px-5 py-2.5 flex items-center gap-2 font-medium">
+              <div className="[&>svg]:w-4 [&>svg]:h-4">
+                {skillIcons[skill] || null}
+              </div>
+              <span>{skill}</span>
+            </Badge>
+          ))}
+        </div>
+      )}
     </Card>
   );
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {renderSkillGroup("Frontend Architecture", skills.frontend, true)}
-      {renderSkillGroup("Backend Systems", skills.backend)}
-      {renderSkillGroup("Systems & Networks", skills.systems)}
-      {renderSkillGroup("Tools & Workflow", skills.tools, true)}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {renderSkillGroup("Frontend Architecture", skills.frontend, "square", 1)}
+      {renderSkillGroup("Backend Systems", skills.backend, "square", 1)}
+      {renderSkillGroup("Systems & Networks", skills.systems, "pill", 2)}
+      {renderSkillGroup("Tools & Workflow", skills.tools, "pill", 2)}
     </div>
   );
 }
