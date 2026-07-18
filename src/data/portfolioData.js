@@ -49,14 +49,14 @@ export const portfolioData = {
       degree: "Diploma in Information Technology",
       school: "POLIMAS",
       duration: "2023–2026",
-      details: ""
+      details: "Focused on full-stack web development, system infrastructure, and database management. Actively developed real-world academic projects including a lecture room booking system and dynamic web applications."
     },
     {
       id: 2,
       degree: "Sijil Pelajaran Malaysia (SPM)",
       school: "SMK Merbok",
       duration: "2018–2022",
-      details: ""
+      details: "Completed secondary education with a strong foundation in problem-solving and analytical thinking, paving the way for a career in the IT industry."
     }
   ],
   projects: [
