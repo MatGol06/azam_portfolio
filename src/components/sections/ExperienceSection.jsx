@@ -24,7 +24,7 @@ export function ExperienceSection() {
             
             <ul className="space-y-3">
               {exp.achievements.map((achievement, i) => (
-                <li key={i} className="flex items-start text-sm text-muted">
+                <li key={i} className="flex items-start text-base text-muted">
                   <span className="text-primary mr-3 mt-1">▹</span>
                   {achievement}
                 </li>
@@ -51,7 +51,7 @@ export function ExperienceSection() {
                 </span>
               </div>
               <h4 className="text-lg font-medium text-muted mb-3">{edu.school}</h4>
-              {edu.details && <p className="text-muted leading-relaxed text-sm">{edu.details}</p>}
+              {edu.details && <p className="text-muted leading-relaxed text-base">{edu.details}</p>}
             </div>
           </div>
         ))}
