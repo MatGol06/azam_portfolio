@@ -76,7 +76,7 @@ export function HeroSection() {
             <img 
               src="/projects/avatar.png" 
               alt="Azam Profile" 
-              className="w-full h-full object-cover scale-[1.25] -translate-y-[15%]"
+              className="w-full h-full object-cover scale-[1.25] -translate-y-[13%]"
             />
           </div>
         </div>

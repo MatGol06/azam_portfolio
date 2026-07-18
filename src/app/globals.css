@@ -12,7 +12,7 @@
   --color-error: #EF4444;
   --color-border: rgba(255, 255, 255, 0.08);
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
   --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
   
   --animate-blink-cursor: blinkCursor 1s step-end infinite;
