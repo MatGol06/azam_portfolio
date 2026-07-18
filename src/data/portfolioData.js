@@ -49,7 +49,12 @@ export const portfolioData = {
       degree: "Diploma in Information Technology",
       school: "POLIMAS",
       duration: "2023–2026",
-      details: "Focused on full-stack web development, system infrastructure, and database management. Actively developed real-world academic projects including a lecture room booking system and dynamic web applications."
+      details: "Focused on full-stack web development, system infrastructure, and database management. Actively developed real-world academic projects including a lecture room booking system and dynamic web applications.",
+      achievements: [
+        "Received the Head of Department Award (Dean's List) every semester.",
+        "Achieved 11th Place in the CTF CyberWarrior POLYCC 2025.",
+        "Won the Silver Award for Final Year Project."
+      ]
     },
     {
       id: 2,
