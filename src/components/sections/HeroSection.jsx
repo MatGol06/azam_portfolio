@@ -46,14 +46,21 @@ export function HeroSection() {
         
         {hero.quote && (
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.25 }}
-            className="mb-10 max-w-xl"
+            className="mb-10 max-w-xl relative"
           >
-            <p className="text-lg md:text-xl text-muted/80 leading-relaxed font-sans">
-              {hero.quote}
-            </p>
+            {/* Creative Gradient Left Border */}
+            <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-primary to-transparent rounded-full" />
+            
+            <div className="pl-6 py-1">
+              <p className="text-lg md:text-xl text-muted/90 leading-relaxed italic font-sans relative">
+                <span className="text-primary/60 text-3xl font-serif absolute -left-5 -top-3">"</span>
+                {hero.quote}
+                <span className="text-primary/60 text-3xl font-serif absolute -bottom-4 ml-1">"</span>
+              </p>
+            </div>
           </motion.div>
         )}
         
