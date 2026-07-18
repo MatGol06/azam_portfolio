@@ -39,10 +39,23 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-xl md:text-2xl text-muted mb-10 max-w-xl leading-relaxed"
+          className="text-xl md:text-2xl text-muted mb-6 max-w-xl leading-relaxed"
         >
           {hero.subtitle}
         </motion.p>
+        
+        {hero.quote && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.25 }}
+            className="mb-10 max-w-xl"
+          >
+            <p className="text-lg md:text-xl text-muted/80 leading-relaxed font-sans">
+              {hero.quote}
+            </p>
+          </motion.div>
+        )}
         
         <motion.div
           initial={{ opacity: 0, y: 20 }}

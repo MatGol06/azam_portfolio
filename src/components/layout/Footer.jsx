@@ -8,7 +8,7 @@ export function Footer() {
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 xl:px-24 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-center md:text-left">
           <a href="#" className="text-xl font-bold text-secondary tracking-tighter block mb-2 font-display">
-            Azam<span className="text-primary">.</span>
+            AzamTajuddin<span className="text-primary">.</span>
           </a>
           <p className="text-sm text-muted">
             Crafting premium digital experiences.

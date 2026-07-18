@@ -28,7 +28,7 @@ export function Navbar() {
     <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-4xl transition-all duration-300">
       <div className="bg-surface/80 backdrop-blur-md border border-border/50 rounded-full px-6 py-3 md:px-8 md:py-4 shadow-lg flex items-center justify-between relative">
         <a href="#" className="text-xl font-extrabold text-secondary tracking-tighter hover:opacity-80 transition-opacity">
-          Azamtajuddin<span className="text-primary">.</span>
+          AzamTajuddin<span className="text-primary">.</span>
         </a>
 
         {/* Desktop Nav */}

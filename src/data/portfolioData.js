@@ -1,7 +1,8 @@
 export const portfolioData = {
   hero: {
-    title: "I build and maintain systems.",
-    subtitle: "An IT graduate focused on reliable web development and stable infrastructure.",
+    title: "Build,break,fix and improve.",
+    subtitle: "A person who is passionate to learn new things and improve themselves everyday.",
+    quote: "Hi, I'm Azam Tajuddin. I'm an IT graduate specializing in system maintenance, network configuration, and full-stack development. I enjoy solving complex problems through clean code and reliable infrastructure.",
     availability: "Available for work"
   },
   about: {
