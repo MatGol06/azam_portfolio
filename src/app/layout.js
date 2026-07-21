@@ -20,8 +20,31 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Azam | Full Stack Developer",
-  description: "Premium portfolio of Azam, a Full Stack Developer specializing in high-performance digital experiences.",
+  metadataBase: new URL('https://azam-portfolio.vercel.app'),
+  title: "Azam Tajuddin | IT Support & Web Developer",
+  description: "I build and maintain reliable web systems, network configurations, and full-stack applications.",
+  openGraph: {
+    title: "Azam Tajuddin | IT Support & Web Developer",
+    description: "I build and maintain reliable web systems, network configurations, and full-stack applications.",
+    url: "https://azam-portfolio.vercel.app", // Bro boleh tukar kalau dah beli domain sendiri
+    siteName: "Azam Tajuddin Portfolio",
+    images: [
+      {
+        url: "/preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Azam Tajuddin Portfolio Preview",
+      }
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Azam Tajuddin | IT Support & Web Developer",
+    description: "I build and maintain reliable web systems, network configurations, and full-stack applications.",
+    images: ["/preview.png"],
+  },
 };
 
 export default function RootLayout({ children }) {
