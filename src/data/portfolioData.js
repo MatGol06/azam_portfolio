@@ -2,7 +2,7 @@ export const portfolioData = {
   hero: {
     title: "Build,break,fix and improve.",
     subtitle: "A person who is passionate to learn new things and improve themselves everyday.",
-    quote: "Hi, I'm Azam Tajuddin. I'm an IT graduate specializing in system maintenance, network configuration, and full-stack development. I enjoy solving complex problems through clean code and reliable infrastructure.",
+    quote: "If you afraid to jump, just jump,it actually a perfect timing to jump.",
     availability: "Available for work"
   },
   about: {
@@ -91,7 +91,7 @@ export const portfolioData = {
       image: "/projects/artWeb.png",
       tech: ["Next.js", "Framer Motion", "Tailwind CSS"],
       github: "https://github.com/MatGol06",
-      live: "https://art-website-project.vercel.app/"
+      live: "#"
     },
     {
       id: 4,
